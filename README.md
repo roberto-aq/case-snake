@@ -4,8 +4,9 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 Una tienda que personaliza tus cases para tu iphone a partir de cualquier imagen.
 
+## Herramientas externas utilizadas
 
-
-## Herramientas externas utilizadas 
- - Autenticación: ([Kinde](https://app.kinde.com/auth/cx/_:nav&m:register&psid:f105452d7044486f9f0f6125a205b3da))
- - Estilos: ([Shadcn](https://ui.shadcn.com/docs/installation))
+- Autenticación: ([Kinde](https://app.kinde.com/auth/cx/_:nav&m:register&psid:f105452d7044486f9f0f6125a205b3da))
+- Estilos: ([Shadcn](https://ui.shadcn.com/docs/installation))
+- Subida de archivos: [Uploadthing](https://uploadthing.com/)
+- Base de datos: [NeonTech](https://neon.tech/)
