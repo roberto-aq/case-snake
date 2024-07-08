@@ -29,7 +29,7 @@ export const Phone = ({
 				}
 				alt='phone'
 				width={500}
-                height={500}
+				height={500}
 				className='pointer-events-none z-50 select-none'
 			/>
 
@@ -38,7 +38,7 @@ export const Phone = ({
 					src={imgSrc}
 					alt='overlaying phone image'
 					fill
-					className='object-cover'
+					className='object-cover min-w-full min-h-full'
 				/>
 			</div>
 		</div>
