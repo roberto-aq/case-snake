@@ -1,6 +1,9 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# CaseSnake
 
-# Ejecutar Entorno DEV
+Una tienda que personaliza tus cases para tu iphone a partir de cualquier imagen.
+
+## Ejecutar Entorno DEV
 
 1. Clonar el repositorio
 2. Renombrar el archivo **.env.example** a **.env** y llenar las variables correspondientes
@@ -16,9 +19,6 @@ npm install
 npx prisma db push
 ```
 
-# CaseSnake
-
-Una tienda que personaliza tus cases para tu iphone a partir de cualquier imagen.
 
 ## Herramientas externas utilizadas
 

@@ -38,7 +38,7 @@ export const DesignPreview = ({ configuration }: Props) => {
 
 	const { label: modelLabel } = models.options.find(
 		({ value }) => value === model
-	);
+	)!;
 
 	let totalPrice = basePrice;
 	if (material === 'polycarbonate')

@@ -13,7 +13,7 @@ export const useCheckout = () => {
 			toast({
 				title: 'Something went wrong!!!!!',
 				description:
-					'There was an error on our end. Please try again',
+					'There was an error on our end. Please try again - Algo salió mal creando la orden',
 				variant: 'destructive',
 			});
 		},
