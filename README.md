@@ -27,3 +27,4 @@ npx prisma db push
 - Subida de archivos: [Uploadthing](https://uploadthing.com/)
 - Base de datos: [NeonTech](https://neon.tech/)
 - Integración de Pagos: [Stripe](https://dashboard.stripe.com/setup-guide)
+- Envíos de correos: [React email](https://react.email/)
