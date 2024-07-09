@@ -25,8 +25,8 @@ export default function RootLayout({
 				<main className='flex flex-col grainy-light min-h-[calc(100vh-3.5rem-1px)]'>
 					<div className='flex-1 flex flex-col h-full'>
 						<Providers>{children}</Providers>
-						<Footer />
 					</div>
+					<Footer />
 				</main>
 
 				<Toaster />
