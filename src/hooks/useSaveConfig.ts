@@ -15,7 +15,7 @@ export const useSaveConfig = ({
 }) => {
 	const router = useRouter();
 
-	const { mutate: saveConfig } = useMutation({
+	const { mutate: saveConfig, isPending } = useMutation({
 		mutationKey: ['save-config'],
 		mutationFn: async (args: SaveConfigArgs) => {
 			await Promise.all([saveConfiguration(), _saveConfig(args)]);
@@ -35,5 +35,6 @@ export const useSaveConfig = ({
 
 	return {
 		saveConfig,
+		isPending,
 	};
 };

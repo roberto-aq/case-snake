@@ -67,7 +67,7 @@ export const DesignConfigurator = ({
 
 	const { startUpload } = useUploadThing('imageUploader');
 
-	const { saveConfig } = useSaveConfig({
+	const { saveConfig, isPending } = useSaveConfig({
 		saveConfiguration,
 		configId,
 	});
@@ -386,7 +386,9 @@ export const DesignConfigurator = ({
 								)}
 							</p>
 							<Button
-								// loadingText='Saving'
+								isLoading={isPending}
+								disabled={isPending}
+								loadingText='Saving'
 								onClick={() => {
 									console.log({
 										color: options.color.value,
