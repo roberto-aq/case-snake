@@ -6,7 +6,7 @@ import { useRouter } from 'next/navigation';
 export const useCheckout = () => {
 	const router = useRouter();
 
-	const { mutate: createPaymentSession } = useMutation({
+	const { mutate: createPaymentSession, isPending } = useMutation({
 		mutationKey: ['get-checkout-session'],
 		mutationFn: createCheckoutSession,
 		onError: error => {
@@ -25,5 +25,6 @@ export const useCheckout = () => {
 
 	return {
 		createPaymentSession,
+		isPending,
 	};
 };

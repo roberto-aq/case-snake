@@ -50,7 +50,7 @@ export const DesignPreview = ({ configuration }: Props) => {
 		setShowConfetti(true);
 	}, []);
 
-	const { createPaymentSession } = useCheckout();
+	const { createPaymentSession, isPending } = useCheckout();
 
 	const handleCheckout = () => {
 		if (user) {
@@ -167,7 +167,8 @@ export const DesignPreview = ({ configuration }: Props) => {
 
 						<div className='mt-8 flex justify-end pb-12'>
 							<Button
-								isLoading
+								isLoading={isPending}
+								disabled={isPending}
 								onClick={() => handleCheckout()}
 								className='px-4 sm:px-6 lg:px-8'
 							>
