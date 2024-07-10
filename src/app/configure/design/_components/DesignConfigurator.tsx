@@ -3,7 +3,7 @@
 import { useRef, useState } from 'react';
 import NextImage from 'next/image';
 import { Rnd } from 'react-rnd';
-import { Radio, RadioGroup } from '@headlessui/react';
+import { RadioGroup } from '@headlessui/react';
 import {
 	colors,
 	finishes,
@@ -234,7 +234,7 @@ export const DesignConfigurator = ({
 									<div className='mt-3 flex items-center space-x-3'>
 										{colors.map(color => {
 											return (
-												<Radio
+												<RadioGroup.Option
 													key={color.label}
 													value={color}
 													className={({ active, checked }) =>
@@ -253,7 +253,7 @@ export const DesignConfigurator = ({
 															'h-8 w-8 rounded-full border border-black border-opacity-10'
 														)}
 													/>
-												</Radio>
+												</RadioGroup.Option>
 											);
 										})}
 									</div>
